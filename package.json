@@ -1,6 +1,6 @@
 {
   "name": "queried",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Query selector CSS4 +",
   "main": "css4.js",
   "directories": {
@@ -8,7 +8,8 @@
     "lib": "lib"
   },
   "files": [
-    "lib", "*.js"
+    "lib",
+    "*.js"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
