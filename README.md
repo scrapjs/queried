@@ -1,6 +1,6 @@
-# queird [![Build Status](https://travis-ci.org/dfcreative/queird.svg?branch=master)](https://travis-ci.org/dfcreative/queird) [![Code Climate](https://codeclimate.com/github/dfcreative/queird/badges/gpa.svg)](https://codeclimate.com/github/dfcreative/queird) <a href="UNLICENSE"><img src="http://upload.wikimedia.org/wikipedia/commons/6/62/PD-icon.svg" width="20"/></a>
+# queried [![Build Status](https://travis-ci.org/dfcreative/queried.svg?branch=master)](https://travis-ci.org/dfcreative/queried) [![Code Climate](https://codeclimate.com/github/dfcreative/queried/badges/gpa.svg)](https://codeclimate.com/github/dfcreative/queried)
 
-_Querie_ is tiny normalized query selector. It just wraps native `querySelector` and provides hooks for custom pseudos. Basically it polyfills CSS4 pseudos, but might be used to implement other pseudos, like jQuery ones or query-relative.
+_Queried_ is tiny normalized query selector. It just wraps native `querySelector` and provides hooks for custom pseudos. Basically it polyfills CSS4 pseudos, but might be used to implement other pseudos, like jQuery ones or query-relative.
 
 1. Polyfills all CSS4 pseudos: `:has`, `:scope`, `:root`.
 
@@ -14,6 +14,7 @@ _Querie_ is tiny normalized query selector. It just wraps native `querySelector`
 
 
 Use it if you need CSS4 pseudos or other specific pseudos.
+
 Otherwise take a look at analogs:
 
 * query-component
@@ -24,16 +25,21 @@ Otherwise take a look at analogs:
 * jquery
 
 
-`$ npm install queird`
+`$ npm install queried`
 
 ```js
-var q = require('queird');
+var q = require('queried');
 
 //select each div having `a` with `span` inside as immediate children.
-q.all('!div > a:has(span)');
+q.all('div:has(a:has(span))');
 ```
 
 # API
 
-Fully compliant with [query](https://npmjs.org/package/query).
+Fully compliant with [query-component](https://npmjs.org/package/query-component).
 `q.all` returns array instead of `NodeList` to perform `forEach` on.
+
+
+[![NPM](https://nodei.co/npm/queried.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/queried/)
+
+<a href="UNLICENSE"><img src="http://upload.wikimedia.org/wikipedia/commons/6/62/PD-icon.svg" width="20"/></a>
