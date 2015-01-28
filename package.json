@@ -1,6 +1,6 @@
 {
   "name": "queried",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "Query selector CSS4 +",
   "main": "css4.js",
   "directories": {
