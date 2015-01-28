@@ -37,7 +37,13 @@ q.all('div:has(a:has(span))');
 # API
 
 Fully compliant with [query-component](https://npmjs.org/package/query-component).
-`q.all` returns array instead of `NodeList` to perform `forEach` on.
+
+| Method | Description |
+|---|---|
+| **query(selector, el = document)** | Query a single element by selector |
+| **query.all(selector, el = document)** | Query list of elements by selector |
+| **query.registerFilter(name, filterFn)** | Register a new filtering pseudo |
+| **query.registerMapper(name, mapperFn)** | Register a new mapping pseudo |
 
 
 
