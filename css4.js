@@ -18,7 +18,7 @@ try {
 	doc.querySelector(':scope');
 }
 catch (e) {
-	q.registerPseudo('scope', require('./lib/pseudos/scope'));
+	q.registerFilter('scope', require('./lib/pseudos/scope'));
 }
 
 
@@ -27,7 +27,7 @@ try {
 	doc.querySelector(':has');
 }
 catch (e) {
-	q.registerPseudo('has', require('./lib/pseudos/has'));
+	q.registerFilter('has', require('./lib/pseudos/has'));
 }
 
 
@@ -36,7 +36,7 @@ try {
 	doc.querySelector(':root');
 }
 catch (e) {
-	q.registerPseudo('root', require('./lib/pseudos/root'));
+	q.registerFilter('root', require('./lib/pseudos/root'));
 }
 
 
@@ -45,7 +45,7 @@ try {
 	doc.querySelector(':matches');
 }
 catch (e) {
-	q.registerPseudo('matches', require('./lib/pseudos/matches'));
+	q.registerFilter('matches', require('./lib/pseudos/matches'));
 }
 
 

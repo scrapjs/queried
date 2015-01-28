@@ -40,6 +40,8 @@ Fully compliant with [query-component](https://npmjs.org/package/query-component
 `q.all` returns array instead of `NodeList` to perform `forEach` on.
 
 
+
+
 [![NPM](https://nodei.co/npm/queried.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/queried/)
 
 <a href="UNLICENSE"><img src="http://upload.wikimedia.org/wikipedia/commons/6/62/PD-icon.svg" width="20"/></a>
