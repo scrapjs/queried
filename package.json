@@ -25,7 +25,8 @@
     "matches-selector": "^1.0.0",
     "get-uid": "^1.0.1",
     "parenthesis": "^1.2.3",
-    "mutype": "^0.3.9"
+    "mutype": "^0.3.9",
+    "arrayify-compact": "^0.1.0"
   },
   "devDependencies": {
     "require-stub": "^2.2.4",
