@@ -40,10 +40,10 @@ Fully compliant with [query-component](https://npmjs.org/package/query-component
 
 | Method | Description |
 |---|---|
-| **query(selector, el = document)** | Query a single element by selector |
-| **query.all(selector, el = document)** | Query list of elements by selector |
-| **query.registerFilter(name, filterFn)** | Register a new filtering pseudo |
-| **query.registerMapper(name, mapperFn)** | Register a new mapping pseudo |
+| _query(selector, el=document)_ | Query a single element by selector |
+| _query.all(selector, el=document)_ | Query list of elements by selector |
+| _query.registerFilter(name, filterFn)_ | Register a new filtering pseudo |
+| _query.registerMapper(name, mapperFn)_ | Register a new mapping pseudo |
 
 
 
