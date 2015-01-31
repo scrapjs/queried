@@ -45,7 +45,7 @@ Fully compliant with [query-component](https://npmjs.org/package/query-component
 | _query.all(selector, el=document)_ | Query list of elements by selector |
 | _query.registerFilter(name, filterFn)_ | Register a filtering pseudo |
 | _query.registerMapper(name, mapperFn)_ | Register a mapping pseudo |
-| _query.document_ | Default document to use as fallback. Set it up, for exampl, as `q.document = require('min-document')`, if you need custom DOM. |
+| _query.document_ | Default document to use. Change it, if you need custom DOM, like `q.document = require('dom-lite').document`. |
 
 
 

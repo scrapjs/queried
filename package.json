@@ -17,18 +17,17 @@
   "author": "Deema Ywanov <dfcreative@gmail.com>",
   "license": "Unlicensed",
   "dependencies": {
-    "dom-lite": "^0.2.0",
     "arr-flatten": "^1.0.0",
     "sliced": "0.0.5",
     "array-unique": "^0.1.1",
     "get-doc": "^1.0.0",
-    "matches-selector": "^1.0.0",
     "get-uid": "^1.0.1",
     "parenthesis": "^1.2.3",
     "mutype": "^0.3.9",
     "arrayify-compact": "^0.1.0"
   },
   "devDependencies": {
+    "dom-lite": "^0.2.0",
     "require-stub": "^2.2.4",
     "mocha": "~2.1.0",
     "mochify": "^2.2.0",
