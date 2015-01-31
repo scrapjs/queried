@@ -1,4 +1,4 @@
-var assert = require('assert');
+var assert = require('chai').assert;
 var q = require('..');
 
 
@@ -80,6 +80,17 @@ describe('query-relative cases', function(){
 		assert.equal(q('.some', null), null);
 		assert.equal(q('.target', window), t);
 	});
+
+	it(':has(:not(.target))', function(){
+		assert.deepEqual(q.all(':has(:not(.target))', c), [p,t]);
+	});
+	it(':not(:has(.target))', function(){
+		// console.log(q.all(':not(:has(.target))', c))
+		assert.deepEqual(q.all(':not(:has(.target))', c), [f,s,t,i,l]);
+	});
+	it(':has(:matches(:not(.target)))', function(){
+
+	})
 });
 
 

@@ -28,6 +28,9 @@ try {
 }
 catch (e) {
 	q.registerFilter('has', require('./lib/pseudos/has'));
+
+	//polyfilled :has causes artificial :not to make :not(:has(...)).
+	q.registerFilter('not', require('./lib/pseudos/not'));
 }
 
 

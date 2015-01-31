@@ -42,10 +42,13 @@ Fully compliant with [query-component](https://npmjs.org/package/query-component
 |---|---|
 | _query(selector, el=document)_ | Query a single element by selector |
 | _query.all(selector, el=document)_ | Query list of elements by selector |
-| _query.registerFilter(name, filterFn)_ | Register a new filtering pseudo |
-| _query.registerMapper(name, mapperFn)_ | Register a new mapping pseudo |
+| _query.registerFilter(name, filterFn)_ | Register a filtering pseudo |
+| _query.registerMapper(name, mapperFn)_ | Register a mapping pseudo |
 
 
+# Analogs
+
+* [sel](https://github.com/amccollum/sel) — a more complete CSS4 selector, lacks of mapping pseudos.
 
 
 [![NPM](https://nodei.co/npm/queried.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/queried/)
