@@ -1,9 +1,11 @@
 var assert = require('chai').assert;
 var q = require('..');
+var matches = require('../lib/pseudos/matches');
+var domify = require('domify');
 
 
 //shortcuts
-var doc = document, root = document.documentElement;
+var doc = require('get-doc'), root = document.documentElement;
 
 
 //create testing tree
@@ -115,5 +117,25 @@ describe('css4', function(){
 		assert.equal(q('.container:matches(.container)'), c);
 		assert.equal(q('.container:matches(.container, .last)'), c);
 		assert.equal(q('.container:matches(.x)'), undefined);
+	});
+
+	it('mathces-selector tests', function(){
+		var ul = domify('<ul><li><em>foo</em></li></ul>');
+		var li = ul.children[0];
+		var em = li.children[0];
+
+		assert(true === matches(em, 'ul li em'), 'em = "ul li em"');
+		assert(true === matches(em, 'ul em'), 'em = "ul em"');
+		assert(true === matches(em, 'ul > li > em'), 'em = "ul > li > em"');
+		assert(false === matches(em, 'ul ul em'), 'em != "ul ul em"');
+
+		assert(true === matches(li, 'ul li'), 'li = "ul li"');
+		assert(true === matches(li, 'ul > li'), 'li = "ul > li"');
+		assert(true === matches(li, 'li'), 'li = "li"');
+		assert(false === matches(li, 'div > li'), 'li != "div > li"');
+
+		console.log(matches(ul, 'ul'))
+		assert(true == matches(ul, 'ul'), 'ul = "ul"');
+		assert(false == matches(ul, 'body > ul'), 'ul != "body > ul"');
 	});
 });
