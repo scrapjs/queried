@@ -2,7 +2,7 @@
 
 _Queried_ is tiny normalized query selector. It just wraps native `querySelector` and provides hooks for custom pseudos. Basically it polyfills CSS4 pseudos, but might be used to implement other pseudos, like jQuery ones or query-relative.
 
-1. Polyfills all CSS4 pseudos: `:has`, `:scope`, `:root`.
+1. Polyfills CSS3 & CSS4 pseudos: `:has`, `:scope`, `:root`, `:matches`.
 
 2. Fixes immediate children selector `> *`, which is unavailable in _query_.
 
@@ -17,11 +17,12 @@ Use it if you need CSS4 pseudos or other specific pseudos.
 
 Otherwise take a look at analogs:
 
-* query-component
+* [sel](https://github.com/amccollum/sel) — a more complete CSS4 selector, lacks of mapping pseudos and unable to handle nested pseudos like `:not(:has(a))`
+* [query-component](http://npmjs.org/package/query-component) - a tiny wrapper over native `querySelector` with fallback to engines like qwery etc.
 * dom-select
 * qwery
 * domy-element
-* query-relative
+* [query-relative](http://npmjs.org/package/query-relative) — extension to queried with relative pseudos like `:parent`, `:closest()`, `:next()`, `:prev()`.
 * jquery
 
 
@@ -45,10 +46,6 @@ Fully compliant with [query-component](https://npmjs.org/package/query-component
 | _query.registerFilter(name, filterFn)_ | Register a filtering pseudo |
 | _query.registerMapper(name, mapperFn)_ | Register a mapping pseudo |
 
-
-# Analogs
-
-* [sel](https://github.com/amccollum/sel) — a more complete CSS4 selector, lacks of mapping pseudos.
 
 
 [![NPM](https://nodei.co/npm/queried.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/queried/)
