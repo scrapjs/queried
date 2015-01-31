@@ -88,9 +88,18 @@ describe('query-relative cases', function(){
 		// console.log(q.all(':not(:has(.target))', c))
 		assert.deepEqual(q.all(':not(:has(.target))', c), [f,s,t,i,l]);
 	});
-	it(':has(:matches(:not(.target)))', function(){
 
-	})
+	it(':has(:matches(:not(.target)))', function(){
+		assert.deepEqual(q.all(':has(:matches(:not(.target)))', c), [p,t]);
+	});
+
+	it('q.all(selector, [list])', function(){
+		assert.deepEqual(q.all('.target, .first', [t,f,l,c]), [f,t]);
+	});
+
+	it.skip('q(list1, list2)', function(){
+
+	});
 });
 
 
