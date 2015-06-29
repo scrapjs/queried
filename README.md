@@ -40,8 +40,7 @@ q.all('div:has(a:has(span))');
 
 * [sel](https://github.com/amccollum/sel) — a more complete CSS4 selector, lacks of mapping pseudos and unable to handle nested pseudos like `:not(:has(a))`
 * [query-component](http://npmjs.org/package/query-component) - a tiny wrapper over native `querySelector` with fallback to engines like qwery etc.
-* dom-select
-* qwery
-* domy-element
-* [query-relative](http://npmjs.org/package/query-relative) — extension to queried with relative pseudos like `:parent`, `:closest()`, `:next()`, `:prev()`.
-* jquery
+* [dom-select](https://www.npmjs.com/package/dom-select) === [select-dom](https://www.npmjs.com/package/select-dom)
+* [qwery](https://www.npmjs.com/package/qwery)
+* [domy-element](https://www.npmjs.com/package/domy-element)
+* [jquery](https://www.npmjs.com/package/jquery)
