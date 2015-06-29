@@ -103,8 +103,8 @@ describe('query-relative cases', function(){
 		assert.deepEqual(q.all('.target, .first', [t,f,l,c]), [f,t]);
 	});
 
-	it.skip('q(list1, list2)', function(){
-
+	it('q.all(list1, list2)', function(){
+		assert.sameMembers(q.all(['.target', '.first'], [t,f,l,c]), [f,t]);
 	});
 });
 

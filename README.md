@@ -8,9 +8,12 @@ _Queried_ is tiny normalized query selector. It just wraps native `querySelector
 
 3. Returns `Array` instead of `NodeList` in multiple query, so you can do `forEach` on result.
 
+7. Normalizes nested :not’s, like so: `:not(a:not(:target))`.
+
 7. Accepts other elements as a selector, for example, to find within a set.
 
 7. Fully compliant with [query](https://github.com/component/query).
+
 
 
 Use it if you need CSS4 pseudos or other specific pseudos.
