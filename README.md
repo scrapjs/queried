@@ -17,7 +17,7 @@ _Queried_ is a convenient wrapper for _querySelector_.
 
 ## Usage
 
-[![NPM](https://nodei.co/npm/color-tool.png?mini=true)](https://nodei.co/npm/color-tool/)
+[![npm install queried](https://nodei.co/npm/queried.png?mini=true)](https://npmjs.org/package/queried)
 
 
 ```js
