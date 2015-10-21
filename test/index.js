@@ -52,9 +52,12 @@ t.appendChild(i);
 
 describe('query-relative cases', function(){
 	it(':root pseudo', function(){
-		assert.equal(q(':root .target', t));
+		assert.equal(q(':root .target'), t);
 		assert.deepEqual(q.all(':root .target'), [t]);
+		//NOTE: native :root doesn’t return actual root if queried not on the root...
+		// assert.deepEqual(q.all(':root .target', t), [t]);
 		assert.equal(q(':root'), root);
+		// assert.equal(q(':root', t), root);
 	});
 
 	it('generalizing', function(){
