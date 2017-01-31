@@ -37,5 +37,11 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/dfcreative/queried"
-  }
+  },
+  "keywords": [
+    "querySelector",
+    "CSS4",
+    "Array",
+    "wrapper"
+  ]
 }
