@@ -15,7 +15,7 @@
     "test": "mochify"
   },
   "author": "Deema Ywanov <dfcreative@gmail.com>",
-  "license": "Unlicensed",
+  "license": "Unlicense",
   "dependencies": {
     "arr-flatten": "^1.0.0",
     "sliced": "0.0.5",
